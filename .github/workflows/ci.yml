@@ -37,8 +37,8 @@ jobs:
         run: |        
           poetry run mypy ./
   
-      - name: Pylint
+      - name: Ruff
         run: |        
-          poetry run pylint ./fastapi_auth
+          poetry run ruff ./fastapi_auth
   
     
