@@ -12,5 +12,6 @@ docker run -p 8081:8081 auth
 
 ### Swagger UI
 [localhost:8081/docs](localhost:8081/docs)
+
 login: test
 password: test
