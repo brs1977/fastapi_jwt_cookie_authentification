@@ -41,11 +41,9 @@ init_typed = true
 warn_required_dynamic_aliases = true
 
 [tool.isort]
-profile = "black"
-known_third_party = ["platformdirs", "astroid", "sphinx", "isort", "pytest", "mccabe", "six", "toml"]
-skip_glob = ["tests/functional/**", "tests/input/**", "tests/extensions/data/**", "tests/regrtest_data/**", "tests/data/**", "astroid/**", "venv/**"]
-src_paths = ["pylint"]
-
+line_length = 120
+multi_line_output = 3
+include_trailing_comma = true
 
 [tool.ruff]
 line-length = 120
