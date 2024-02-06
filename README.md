@@ -2,7 +2,7 @@
 Used library [async-fastapi-jwt-auth](https://github.com/sijokun/async-fastapi-jwt-auth)
 
 ### Install
-git clone 
+git clone https://github.com/brs1977/fastapi_jwt_cookie_authentification
 
 ### Build
 docker build . --tag auth
