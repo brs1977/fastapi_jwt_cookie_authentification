@@ -9,36 +9,36 @@ jobs:
     env:
       MAIN_URL: ${{ vars.MAIN_URL }}
   
-  steps:
-    - uses: actions/checkout@v3
-
-    - name: Setup Python
-      uses: actions/setup-python@v3
-      with:
-        python-version: 3.11.2
-    
-    - name: Dependencies
-      run: |
-        pip install --upgrade pip 
-    
-    - name: Poetry
-      run: |        
-        pip install poetry 
-
-    - name: Install project
-      run: |        
-        poetry install
-
-    - name: Run tests
-      run: |        
-        poetry run pytest
-
-    - name: MyPy
-      run: |        
-        poetry run mypy ./
-
-    - name: Pylint
-      run: |        
-        poetry run pylint ./fastapi_auth
-
+    steps:
+      - uses: actions/checkout@v3
+  
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.11.2
+      
+      - name: Dependencies
+        run: |
+          pip install --upgrade pip 
+      
+      - name: Poetry
+        run: |        
+          pip install poetry 
+  
+      - name: Install project
+        run: |        
+          poetry install
+  
+      - name: Run tests
+        run: |        
+          poetry run pytest
+  
+      - name: MyPy
+        run: |        
+          poetry run mypy ./
+  
+      - name: Pylint
+        run: |        
+          poetry run pylint ./fastapi_auth
+  
     
